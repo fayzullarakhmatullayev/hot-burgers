@@ -1,7 +1,11 @@
 <template>
   <div class="order-wrap">
     <h2>Ваш Заказ</h2>
-    <transition-group tag="ul" class="order" v-if="isBurgers">
+    <transition-group 
+      tag="ul" 
+      name="order" 
+      class="order"
+      v-if="isBurgers">
       <li v-for="(count, index) in order" :key="index">
         <div v-if="burgers[index] && burgers[index].status === 'available'">
           <span>
@@ -78,3 +82,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+</style>
