@@ -1,5 +1,8 @@
 # hot-burgers
 
+# Hosting
+https://vue-hot-burgers.web.app/
+
 ## Project setup
 ```
 npm install
